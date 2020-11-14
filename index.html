@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+
+
+</head>
+
+<body>
+
+<textarea>
+
+</textarea>
+
+<div id="button">
+버튼
+</div>
+
+</body>
+
+<script>
+var simplemde = new SimpleMDE();
+
+
+
+
+
+
+var button = document.querySelector('#button')
+
+button.addEventListener('click', ()=> {
+    console.log('onclick')
+    console.log(simplemde.value())
+})
+
+</script>
+
+</html>
+
